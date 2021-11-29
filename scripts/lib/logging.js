@@ -1,7 +1,9 @@
 /* eslint no-console:0 */
+// import supportsColor from 'supports-color';
 
-const chalk = require('chalk').default
-
+// const chalk = require('chalk').default
+const chalk = require('chalk');
+// console.log(chalk.supportsColor)
 const hasIcons = !!(chalk.supportsColor.has256 || process.env.CI)
 const icons = {
   info: chalk.cyan(hasIcons ? '•' : '*'),
